@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://ccekqcpmvw2lu"]
+
+[ext_resource type="Texture2D" uid="uid://pq84fk86kwos" path="res://classroom-with-whiteboard-map/30422.jpg" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://cyovnid0607xu" path="res://computer-games-seamless-layers-background-set/17713.jpg" id="2_epypp"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bvq4q"]
+texture = ExtResource("2_epypp")
+160:151/0 = 0
+26:16/0 = 0
+29:10/0 = 0
+12:21/0 = 0
+22:20/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_8qksc"]
+sources/0 = SubResource("TileSetAtlasSource_bvq4q")
+
+[node name="Node2D" type="Node2D" unique_id=1290054352]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=786375784]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_0e48y")
+
+[node name="TileMap" type="TileMap" parent="." unique_id=672485130]
+tile_set = SubResource("TileSet_8qksc")
+format = 2
