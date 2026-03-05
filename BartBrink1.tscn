@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dmvbhs136p86f"]
+
+[ext_resource type="Texture2D" uid="uid://cekco1njsrcrh" path="res://BartBrink.png" id="1_ue2p0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x5fef"]
+size = Vector2(142.7003, 196.89993)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=17212080]
+scale = Vector2(5, 5)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=155642818]
+texture_filter = 1
+position = Vector2(72.79999, 101.39999)
+scale = Vector2(0.75604284, 0.9319488)
+texture = ExtResource("1_ue2p0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1797651192]
+position = Vector2(73.79999, 97.99999)
+scale = Vector2(0.99999976, 0.99999976)
+shape = SubResource("RectangleShape2D_x5fef")

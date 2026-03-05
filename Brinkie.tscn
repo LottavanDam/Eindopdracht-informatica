@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://cd2obtd362myx"]
+
+[ext_resource type="Texture2D" uid="uid://c43wkyppvyf4t" path="res://Image brinkie.png" id="1_s0c12"]
+[ext_resource type="Script" uid="uid://ca3575xy60qap" path="res://Brinkie.gd" id="1_wawg3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wawg3"]
+atlas = ExtResource("1_s0c12")
+region = Rect2(0, 0, 1536, 1024)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h2it3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wawg3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vnu3r"]
+size = Vector2(1368.1992, 737.70056)
+
+[node name="Brinkie" type="Area2D" unique_id=1393293618]
+script = ExtResource("1_wawg3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=185948365]
+texture_filter = 1
+position = Vector2(197.00049, 177.00024)
+scale = Vector2(0.26000783, 0.3571427)
+sprite_frames = SubResource("SpriteFrames_h2it3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D" unique_id=1822607201]
+position = Vector2(7.6901855, -80.450806)
+scale = Vector2(1.0000001, 0.9999998)
+shape = SubResource("RectangleShape2D_vnu3r")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
