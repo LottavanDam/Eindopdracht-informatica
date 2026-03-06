@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://ckmwvw35au8cc"]
+
+[ext_resource type="Texture2D" uid="uid://gc7737obqek3" path="res://Speler/9506020-pastel-oranje-effen-kleur-landschap-achtergrond-gratis-vector.jpg" id="1_72lvs"]
+[ext_resource type="Script" uid="uid://c7ookh3qyng3g" path="res://hoofd_menu.gd" id="1_cf3ve"]
+[ext_resource type="Texture2D" uid="uid://dbxn8c6f5lph7" path="res://Speler/Brinkie de slimme koekjesheld.png" id="2_cf3ve"]
+
+[node name="HoofdMenu" type="Node" unique_id=911936664]
+script = ExtResource("1_cf3ve")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=282177281]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -240.5
+offset_top = -188.0
+offset_right = 240.5
+offset_bottom = 144.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_72lvs")
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1881637846]
+offset_left = 265.0
+offset_right = 899.0
+offset_bottom = 658.0
+texture = ExtResource("2_cf3ve")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="." unique_id=1640820486]
+offset_left = 629.0
+offset_top = 571.0
+offset_right = 1159.0
+offset_bottom = 658.0
+theme_override_colors/font_color = Color(0.87701756, 0.60711485, 0.24743271, 1)
+theme_override_font_sizes/font_size = 45
+text = "Klik hier om te spelen
+"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
