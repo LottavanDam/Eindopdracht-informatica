@@ -1,12 +1,12 @@
 extends Node2D
-
+var game_running : bool
 var screen_size : Vector2i
 var tas_scene = preload("res://Eindopdracht-informatica/tas.tscn")
-
+@onready var spel_manager: Node = %Spelmanager
 var obstacle_types := [tas_scene]
 var obstacles : Array = []
 var last_obs
-
+var high_score : int
 # snelheid van obstacles
 var speed : float = 1300
 
@@ -20,10 +20,14 @@ func _on_area_entered(area):
 
 
 func new_game():
-	obstacles.clear()
+	game_running = false
 	get_tree().paused = false
+	
 	$GameOver.hide()
 	
+	for obs in obstacles:
+		obs.queue_free()
+	obstacles.clear()
 
 	for obs in obstacles:
 		obs.queue_free()
@@ -72,9 +76,15 @@ func generate_obs():
 func hit_obs(body):
 	if body.name == "CharacterBody2D":
 		game_over()
-
+		spel_manager.reset_point()
+	
+func check_high_score(body):
+	if spel_manager.points > high_score:
+		high_score = spel_manager.high_points
+		
 
 func game_over():
 	get_tree().paused = true
+	game_running = false
 	$GameOver.show()
 	

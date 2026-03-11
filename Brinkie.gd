@@ -1,7 +1,7 @@
 extends Area2D
 @onready var spel_manager: Node = %Spelmanager
 
-var speed: float = 800
+var speed: float = 1200
 var start_y: float
 
 func _ready() -> void:
