@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pq84fk86kwos"
-path="res://.godot/imported/30422.jpg-744d10a1caccc0245726a9c510f72ac5.ctex"
+uid="uid://bfiubim66qci6"
+path="res://.godot/imported/Bart brink-3.png.png-1b4a346305f3f2bb77219d8a656bb0fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Eindopdracht-informatica/30422.jpg"
-dest_files=["res://.godot/imported/30422.jpg-744d10a1caccc0245726a9c510f72ac5.ctex"]
+source_file="res://Eindopdracht-informatica/Speler/Bart brink-3.png.png"
+dest_files=["res://.godot/imported/Bart brink-3.png.png-1b4a346305f3f2bb77219d8a656bb0fd.ctex"]
 
 [params]
 

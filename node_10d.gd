@@ -21,10 +21,17 @@ func _on_area_entered(area):
 
 func new_game():
 	obstacles.clear()
+	get_tree().paused = false
+	$GameOver.hide()
+	
 
+	for obs in obstacles:
+		obs.queue_free()
+	obstacles.clear()
 
 func _ready() -> void:
 	screen_size = get_window().size
+	$GameOver.get_node("Button").pressed.connect(new_game)
 	new_game()
 
 
@@ -45,9 +52,10 @@ func generate_obs():
 		var obs_type = obstacle_types[randi() % obstacle_types.size()]
 		var obs = obs_type.instantiate()
 
+
 		# spawn rechts buiten scherm
 		var obs_x = screen_size.x + 4500
-
+		obs.body_entered.connect(hit_obs)
 		# pak sprite
 		var sprite = obs.get_node_or_null("Sprite2D")
 		if sprite == null:
@@ -61,3 +69,12 @@ func generate_obs():
 
 		obstacles.append(obs)
 		last_obs = obs
+func hit_obs(body):
+	if body.name == "CharacterBody2D":
+		game_over()
+
+
+func game_over():
+	get_tree().paused = true
+	$GameOver.show()
+	

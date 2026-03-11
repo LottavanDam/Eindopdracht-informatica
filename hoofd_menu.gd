@@ -12,4 +12,7 @@ func _process(delta: float) -> void:
 
 
 func _on_button_pressed() -> void:
-	pass # Replace with function body.
+		get_tree().change_scene_to_file("res://node_11d")
+		print("knop doet het")
+		var error = get_tree().change_scene_to_file("res://Eindopdracht-informatica/node_11d.tscn")
+		print("error")

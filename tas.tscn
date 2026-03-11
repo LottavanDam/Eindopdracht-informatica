@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://dx67eoyvx6jju"]
 
-[ext_resource type="Texture2D" uid="uid://ds5grn85uwkse" path="res://Image tas.png" id="1_4lfcf"]
+[ext_resource type="Texture2D" uid="uid://cuj5b1eefbt6c" path="res://Eindopdracht-informatica/Image tas.png" id="1_4lfcf"]
 
 [node name="Area2D" type="Area2D" unique_id=903734129]
+scale = Vector2(0.5, 0.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1413311688]
 texture_filter = 1

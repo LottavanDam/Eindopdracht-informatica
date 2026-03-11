@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://cd2obtd362myx"]
 
-[ext_resource type="Texture2D" uid="uid://c43wkyppvyf4t" path="res://Image brinkie.png" id="1_s0c12"]
-[ext_resource type="Script" uid="uid://ca3575xy60qap" path="res://Brinkie.gd" id="1_wawg3"]
+[ext_resource type="Texture2D" uid="uid://dtddj30xf1g7v" path="res://Eindopdracht-informatica/Image brinkie.png" id="1_s0c12"]
+[ext_resource type="Script" uid="uid://ca3575xy60qap" path="res://Eindopdracht-informatica/Brinkie.gd" id="1_wawg3"]
+
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wawg3"]
 atlas = ExtResource("1_s0c12")

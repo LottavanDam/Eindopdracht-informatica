@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pq84fk86kwos"
-path="res://.godot/imported/30422.jpg-744d10a1caccc0245726a9c510f72ac5.ctex"
+uid="uid://bbprv8o3clon5"
+path="res://.godot/imported/Brinkie de slimme koekjesheld.png-b1877a29e4604efd02ff3293082d2e81.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Eindopdracht-informatica/30422.jpg"
-dest_files=["res://.godot/imported/30422.jpg-744d10a1caccc0245726a9c510f72ac5.ctex"]
+source_file="res://Eindopdracht-informatica/Speler/Brinkie de slimme koekjesheld.png"
+dest_files=["res://.godot/imported/Brinkie de slimme koekjesheld.png-b1877a29e4604efd02ff3293082d2e81.ctex"]
 
 [params]
 

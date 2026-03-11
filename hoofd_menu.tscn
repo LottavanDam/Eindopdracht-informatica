@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://ckmwvw35au8cc"]
 
-[ext_resource type="Texture2D" uid="uid://gc7737obqek3" path="res://Speler/9506020-pastel-oranje-effen-kleur-landschap-achtergrond-gratis-vector.jpg" id="1_72lvs"]
-[ext_resource type="Script" uid="uid://c7ookh3qyng3g" path="res://hoofd_menu.gd" id="1_cf3ve"]
-[ext_resource type="Texture2D" uid="uid://dbxn8c6f5lph7" path="res://Speler/Brinkie de slimme koekjesheld.png" id="2_cf3ve"]
+[ext_resource type="Texture2D" uid="uid://bdsvyn4tl1eoj" path="res://Eindopdracht-informatica/9506020-pastel-oranje-effen-kleur-landschap-achtergrond-gratis-vector.jpg" id="1_72lvs"]
+[ext_resource type="Script" uid="uid://bnfxfyv8gksni" path="res://Eindopdracht-informatica/hoofd_menu.gd" id="1_cf3ve"]
+[ext_resource type="Texture2D" uid="uid://bpyorn5qusjtn" path="res://Eindopdracht-informatica/Brinkie de slimme koekjesheld.png" id="2_cf3ve"]
 
 [node name="HoofdMenu" type="Node" unique_id=911936664]
 script = ExtResource("1_cf3ve")

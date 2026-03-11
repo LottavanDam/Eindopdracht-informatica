@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://clq1rg4kxuvd6"]
 
-[ext_resource type="Script" uid="uid://cgk432s4apbqc" path="res://bart_brink.gd" id="1_u7btk"]
-[ext_resource type="Texture2D" uid="uid://ct6odttkqdwfm" path="res://Bart brink-1.png.png" id="2_ruxh0"]
-[ext_resource type="Texture2D" uid="uid://decq8exo0qa1" path="res://Bart brink-2.png.png" id="3_vsbu6"]
-[ext_resource type="Texture2D" uid="uid://bwfxnluy4o5hu" path="res://Bart brink-3.png.png" id="4_y20gd"]
-[ext_resource type="Texture2D" uid="uid://fcom4bc1r2kq" path="res://Bart brink-4.png.png" id="5_6ujyo"]
-[ext_resource type="Texture2D" uid="uid://drcpan85pc75f" path="res://Bart brink-5.png.png" id="6_livmd"]
-[ext_resource type="Texture2D" uid="uid://rey7ry20wowx" path="res://Bart brink-6.png.png" id="7_6kb2e"]
-[ext_resource type="Texture2D" uid="uid://caaw1thq6dhex" path="res://Bart brink-7.png.png" id="8_hkkfh"]
-[ext_resource type="Texture2D" uid="uid://d1oat63ga6ndu" path="res://Bart brink-8.png.png" id="9_8h1ky"]
+[ext_resource type="Script" uid="uid://ch77shxi67cju" path="res://Eindopdracht-informatica/bart_brink.gd" id="1_u7btk"]
+[ext_resource type="Texture2D" uid="uid://j0fwtv4nuiao" path="res://Eindopdracht-informatica/Speler/Bart brink-1.png.png" id="2_ruxh0"]
+[ext_resource type="Texture2D" uid="uid://bibuacacrih2w" path="res://Eindopdracht-informatica/Speler/Bart brink-2.png.png" id="3_vsbu6"]
+[ext_resource type="Texture2D" uid="uid://bfiubim66qci6" path="res://Eindopdracht-informatica/Speler/Bart brink-3.png.png" id="4_y20gd"]
+[ext_resource type="Texture2D" uid="uid://cu57xr60w335i" path="res://Eindopdracht-informatica/Speler/Bart brink-4.png.png" id="5_6ujyo"]
+[ext_resource type="Texture2D" uid="uid://dojg4r4vlwvo0" path="res://Eindopdracht-informatica/Speler/Bart brink-5.png.png" id="6_livmd"]
+[ext_resource type="Texture2D" uid="uid://bcxpwfnuc3jys" path="res://Eindopdracht-informatica/Speler/Bart brink-6.png.png" id="7_6kb2e"]
+[ext_resource type="Texture2D" uid="uid://cbmaqjxnyy1f3" path="res://Eindopdracht-informatica/Speler/Bart brink-7.png.png" id="8_hkkfh"]
+[ext_resource type="Texture2D" uid="uid://emglqw4ibcir" path="res://Eindopdracht-informatica/Speler/Bart brink-8.png.png" id="9_8h1ky"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ue2p0"]
 animations = [{
@@ -63,6 +63,7 @@ position = Vector2(79.19999, 94.19999)
 scale = Vector2(1.371875, 1.678125)
 sprite_frames = SubResource("SpriteFrames_ue2p0")
 animation = &"running"
+autoplay = "running"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1797651192]
 position = Vector2(55.699986, 98.575)

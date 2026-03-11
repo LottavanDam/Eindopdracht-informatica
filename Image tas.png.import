@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pq84fk86kwos"
-path="res://.godot/imported/30422.jpg-744d10a1caccc0245726a9c510f72ac5.ctex"
+uid="uid://cuj5b1eefbt6c"
+path="res://.godot/imported/Image tas.png-fff27d0add9fdba0b18f63e64d346646.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Eindopdracht-informatica/30422.jpg"
-dest_files=["res://.godot/imported/30422.jpg-744d10a1caccc0245726a9c510f72ac5.ctex"]
+source_file="res://Eindopdracht-informatica/Image tas.png"
+dest_files=["res://.godot/imported/Image tas.png-fff27d0add9fdba0b18f63e64d346646.ctex"]
 
 [params]
 
